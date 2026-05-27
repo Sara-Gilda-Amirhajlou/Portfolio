@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-label="Consentor browser extension mockup">
+  <rect width="960" height="640" fill="#fffaf3"/>
+  <rect x="24" y="24" width="912" height="56" rx="12" fill="#161514"/>
+  <rect x="48" y="42" width="120" height="20" rx="6" fill="#f5c84b"/>
+  <rect x="200" y="42" width="520" height="20" rx="6" fill="#6c655d"/>
+  <rect x="48" y="108" width="864" height="488" rx="24" fill="#ffffff" stroke="#161514" stroke-width="3"/>
+  <text x="72" y="168" fill="#ff5e44" font-family="Georgia,serif" font-size="32" font-weight="700">Manage your cookie preferences</text>
+  <rect x="72" y="196" width="720" height="12" rx="4" fill="#ddd1c4"/>
+  <rect x="72" y="220" width="640" height="12" rx="4" fill="#ddd1c4"/>
+  <rect x="72" y="280" width="240" height="52" rx="14" fill="#161514"/>
+  <text x="112" y="313" fill="#f7f1e8" font-family="Arial,sans-serif" font-size="18" font-weight="700">Reject all</text>
+  <rect x="332" y="280" width="280" height="52" rx="14" fill="#ffffff" stroke="#161514" stroke-width="3"/>
+  <text x="372" y="313" fill="#161514" font-family="Arial,sans-serif" font-size="18" font-weight="700">Manage preferences</text>
+  <rect x="632" y="280" width="240" height="52" rx="14" fill="#44c7b6"/>
+  <text x="688" y="313" fill="#161514" font-family="Arial,sans-serif" font-size="18" font-weight="700">Accept all</text>
+  <rect x="72" y="380" width="816" height="72" rx="16" fill="#e7fbf6" stroke="#161514" stroke-width="2"/>
+  <rect x="96" y="404" width="180" height="24" rx="6" fill="#f5c84b"/>
+  <rect x="96" y="472" width="720" height="16" rx="4" fill="#ddd1c4"/>
+  <rect x="96" y="500" width="680" height="16" rx="4" fill="#ddd1c4"/>
+</svg>

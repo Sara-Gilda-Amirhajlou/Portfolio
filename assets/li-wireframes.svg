@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-label="Customer and auditing panel wireframes">
+  <rect width="960" height="640" fill="#f3f3f3"/>
+  <rect x="32" y="32" width="420" height="576" rx="20" fill="#fff" stroke="#161514" stroke-width="3"/>
+  <rect x="56" y="56" width="180" height="20" rx="6" fill="#161514"/>
+  <rect x="56" y="96" width="372" height="48" rx="10" fill="#e7fbf6" stroke="#161514" stroke-width="2"/>
+  <rect x="56" y="164" width="372" height="72" rx="10" fill="#fff" stroke="#161514" stroke-width="2"/>
+  <rect x="56" y="252" width="372" height="72" rx="10" fill="#fff" stroke="#161514" stroke-width="2"/>
+  <rect x="56" y="340" width="372" height="72" rx="10" fill="#fff1a6" stroke="#161514" stroke-width="2"/>
+  <rect x="56" y="448" width="160" height="44" rx="12" fill="#44c7b6" stroke="#161514" stroke-width="2"/>
+  <rect x="508" y="32" width="420" height="576" rx="20" fill="#fff" stroke="#161514" stroke-width="3"/>
+  <rect x="532" y="56" width="220" height="20" rx="6" fill="#ff5e44"/>
+  <rect x="532" y="96" width="372" height="120" rx="10" fill="#fff6df" stroke="#161514" stroke-width="2"/>
+  <rect x="552" y="120" width="320" height="12" rx="4" fill="#ddd1c4"/>
+  <rect x="552" y="144" width="280" height="12" rx="4" fill="#ddd1c4"/>
+  <rect x="552" y="168" width="240" height="12" rx="4" fill="#ddd1c4"/>
+  <rect x="532" y="240" width="372" height="200" rx="10" fill="#fff" stroke="#161514" stroke-width="2"/>
+  <rect x="556" y="268" width="120" height="28" rx="8" fill="#f5c84b"/>
+  <rect x="688" y="268" width="120" height="28" rx="8" fill="#e7fbf6"/>
+  <rect x="556" y="312" width="324" height="16" rx="4" fill="#ddd1c4"/>
+  <rect x="556" y="340" width="300" height="16" rx="4" fill="#ddd1c4"/>
+  <rect x="556" y="368" width="260" height="16" rx="4" fill="#ddd1c4"/>
+  <text x="480" y="628" text-anchor="middle" fill="#6c655d" font-family="Arial,sans-serif" font-size="14">Auditing Panel wireframes (excerpt)</text>
+</svg>

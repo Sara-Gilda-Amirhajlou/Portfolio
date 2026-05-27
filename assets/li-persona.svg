@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-label="EU internet user persona">
+  <rect width="960" height="520" fill="#fffaf3"/>
+  <rect x="40" y="40" width="880" height="440" rx="28" fill="#ffffff" stroke="#161514" stroke-width="3"/>
+  <circle cx="160" cy="180" r="64" fill="#f5c84b" stroke="#161514" stroke-width="3"/>
+  <text x="118" y="188" fill="#161514" font-family="Arial,sans-serif" font-size="28" font-weight="700">EU</text>
+  <text x="260" y="130" fill="#161514" font-family="Georgia,serif" font-size="34" font-weight="700">Privacy-conscious internet user</text>
+  <text x="260" y="168" fill="#6c655d" font-family="Arial,sans-serif" font-size="18">Age 2845 � shops, reads news, uses public services daily</text>
+  <rect x="260" y="200" width="620" height="96" rx="16" fill="#fff6df" stroke="#ff5e44" stroke-width="2"/>
+  <text x="284" y="240" fill="#161514" font-family="Georgia,serif" font-size="20">I click accept all because I don't understand what I'm agreeing to.</text>
+  <text x="260" y="340" fill="#ff5e44" font-family="Arial,sans-serif" font-size="16" font-weight="700">Goals</text>
+  <rect x="260" y="352" width="280" height="44" rx="10" fill="#e7fbf6" stroke="#161514" stroke-width="2"/>
+  <text x="276" y="380" fill="#161514" font-size="15">Control data without friction</text>
+  <rect x="560" y="352" width="320" height="44" rx="10" fill="#fff1a6" stroke="#161514" stroke-width="2"/>
+  <text x="576" y="380" fill="#161514" font-size="15">Understand consent in plain language</text>
+  <text x="260" y="430" fill="#ff5e44" font-family="Arial,sans-serif" font-size="16" font-weight="700">Pain points</text>
+  <text x="260" y="458" fill="#3f3933" font-family="Arial,sans-serif" font-size="15">Consent fatigue � legal jargon � dark patterns � no central control</text>
+</svg>

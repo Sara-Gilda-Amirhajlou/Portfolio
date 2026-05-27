@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sara Gilda Amirhajlou — UX Research, AI UX & Product Design</title>
+<meta name="description" content="Sara Gilda Amirhajlou — Co-Founder of Voxentra AI, UX Researcher, UX/UI Designer, and AI human-centered technology enthusiast." />
+<link href="assets/fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--paper:#f7f1e8;--ink:#161514;--muted:#6c655d;--line:#ddd1c4;--coal:#111;--accent:#ff5e44;--mint:#44c7b6;--sun:#f5c84b;--blue:#5977ff;--white:#fffaf3;--radius:28px;--shadow:0 30px 80px rgba(43,34,25,.18);--max:1180px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(rgba(22,21,20,.09) .8px,transparent .8px);background-size:18px 18px;opacity:.44;z-index:-2}body:after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 5% 0%,rgba(255,94,68,.18),transparent 27%),radial-gradient(circle at 95% 10%,rgba(68,199,182,.15),transparent 31%),radial-gradient(circle at 50% 100%,rgba(245,200,75,.15),transparent 36%);z-index:-3}.noise{position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 38px));margin-inline:auto}.cursor,.cursor-dot{position:fixed;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);display:none}.cursor{width:46px;height:46px;border:1px solid rgba(22,21,20,.45);transition:width .2s,height .2s,background .2s}.cursor-dot{width:7px;height:7px;background:var(--ink)}@media(pointer:fine){.cursor,.cursor-dot{display:block}}.preloader{position:fixed;inset:0;background:var(--ink);color:var(--paper);display:grid;place-items:center;z-index:1000}.preloader b{font-family:Playfair Display,serif;font-size:clamp(48px,10vw,120px);letter-spacing:-.08em}.topbar{position:fixed;top:18px;left:50%;transform:translateX(-50%);width:min(1080px,calc(100% - 32px));z-index:90;display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border:1px solid rgba(22,21,20,.13);border-radius:999px;background:rgba(247,241,232,.74);backdrop-filter:blur(18px);box-shadow:0 14px 50px rgba(35,28,22,.12)}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.04em}.brand i{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--paper);font-style:normal}.nav{display:flex;gap:2px}.nav a{padding:10px 12px;border-radius:999px;color:var(--muted);font-size:13px;font-weight:700}.nav a:hover{background:var(--ink);color:var(--paper)}.cta{display:inline-flex;align-items:center;gap:10px;border:2px solid var(--ink);border-radius:999px;background:var(--ink);color:var(--paper);font-weight:900;padding:13px 18px;box-shadow:6px 6px 0 var(--sun);transition:.25s}.cta:hover{transform:translate(-3px,-3px);box-shadow:10px 10px 0 var(--sun)}.cta.alt{background:var(--white);color:var(--ink);box-shadow:6px 6px 0 var(--mint)}.hero{min-height:100vh;padding:130px 0 76px;display:grid;align-items:center;position:relative}.heroGrid{display:grid;grid-template-columns:1.06fr .94fr;gap:42px;align-items:center}.kicker{font-family:Caveat,cursive;font-size:28px;color:var(--accent);line-height:1}.hero h1{font-family:Playfair Display,serif;font-size:clamp(58px,9.7vw,137px);line-height:.83;letter-spacing:-.075em;margin:16px 0 24px}.hero .lead{font-size:clamp(18px,2.1vw,25px);line-height:1.45;max-width:760px;color:#38322c}.heroActions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}.stamp{display:inline-flex;align-items:center;gap:10px;margin-top:28px;border:2px dashed var(--ink);border-radius:999px;padding:10px 14px;font-weight:800;transform:rotate(-2deg);background:rgba(255,250,243,.7)}.portraitWrap{position:relative;min-height:650px}.portraitCard{position:absolute;inset:20px 0 0 55px;border:2px solid var(--ink);border-radius:38px;background:var(--white);box-shadow:18px 18px 0 #111;overflow:hidden;transform:rotate(2deg)}.portraitCard img{width:100%;height:100%;object-fit:cover;filter:saturate(1.02) contrast(1.02)}.sketchOrbit{position:absolute;inset:-28px -60px auto -50px;z-index:3;opacity:.78;mix-blend-mode:multiply}.note{position:absolute;z-index:5;border:2px solid var(--ink);border-radius:22px;padding:14px 16px;background:#fff1a6;box-shadow:7px 7px 0 rgba(22,21,20,.95);font-weight:800}.note small{display:block;color:#665f55;font-weight:700}.note.one{left:0;bottom:80px;transform:rotate(-4deg);max-width:230px}.note.two{right:0;top:90px;background:#dff8ff;transform:rotate(5deg);max-width:230px}.floatingWord{position:absolute;font-family:Caveat,cursive;font-size:42px;color:var(--accent);z-index:6;right:20px;bottom:24px;transform:rotate(-8deg)}.section{padding:105px 0;position:relative}.sectionHead{display:flex;align-items:end;justify-content:space-between;gap:26px;margin-bottom:38px}.sectionHead h2{font-family:Playfair Display,serif;font-size:clamp(42px,6.4vw,88px);line-height:.9;letter-spacing:-.06em;margin:7px 0 0;max-width:850px}.sectionHead p{max-width:430px;color:var(--muted);font-size:17px;line-height:1.6}.marquee{border-block:2px solid var(--ink);padding:18px 0;background:var(--ink);color:var(--paper);overflow:hidden;white-space:nowrap}.marqueeTrack{display:inline-flex;gap:34px;font-weight:900;font-size:clamp(28px,5vw,62px);font-family:Playfair Display,serif;letter-spacing:-.05em}.marqueeTrack span:nth-child(2n){color:var(--sun)}.aboutGrid{display:grid;grid-template-columns:.86fr 1.14fr;gap:18px}.paperCard{border:2px solid var(--ink);border-radius:var(--radius);background:var(--white);padding:28px;box-shadow:9px 9px 0 rgba(22,21,20,.95);position:relative}.paperCard h3{font-size:26px;letter-spacing:-.04em;margin:0 0 12px}.paperCard p,.paperCard li{color:#4a443d;line-height:1.68}.signature{font-family:Caveat,cursive;font-size:46px;color:var(--accent);line-height:1;margin-top:18px}.timeline{display:grid;gap:14px}.timelineItem{display:grid;grid-template-columns:140px 1fr;gap:18px;border-top:2px solid var(--ink);padding-top:18px}.timelineItem b{font-size:15px}.timelineItem h4{margin:0 0 6px;font-size:21px}.projects{display:grid;gap:22px}.project{min-height:520px;border:2px solid var(--ink);border-radius:38px;overflow:hidden;background:var(--white);box-shadow:13px 13px 0 #111;display:grid;grid-template-columns:1.1fr .9fr;position:relative}.project:nth-child(even){grid-template-columns:.9fr 1.1fr}.project:nth-child(even) .projectMedia{order:2}.projectMedia{position:relative;overflow:hidden;background:#ddd}.projectMedia img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.05)}.projectText{padding:38px;display:flex;flex-direction:column;justify-content:space-between}.tag{display:inline-flex;width:max-content;font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:900;border:2px solid var(--ink);border-radius:999px;padding:8px 12px;background:var(--sun)}.project h3{font-family:Playfair Display,serif;font-size:clamp(38px,4.6vw,66px);line-height:.9;letter-spacing:-.06em;margin:20px 0 15px}.project p{color:#48413a;line-height:1.72;font-size:17px}.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.chip{border:1.8px solid var(--ink);border-radius:999px;background:#fff;padding:8px 12px;font-weight:800;font-size:13px}.magnify{position:absolute;right:18px;bottom:18px;z-index:4;background:var(--ink);color:var(--paper);border-radius:999px;padding:12px 16px;font-weight:900}.skillsGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skillCard{min-height:285px;border:2px solid var(--ink);border-radius:30px;background:var(--white);padding:24px;box-shadow:8px 8px 0 #111;transition:.25s}.skillCard:hover{transform:translate(-4px,-4px);box-shadow:13px 13px 0 #111}.skillCard:nth-child(2){background:#e7fbf6}.skillCard:nth-child(3){background:#fff1a6}.skillCard:nth-child(4){background:#ffe4eb}.skillCard:nth-child(5){background:#e8ecff}.skillCard h3{font-size:26px;margin:0 0 12px;letter-spacing:-.04em}.skillCard ul{padding-left:20px;margin:0;color:#4c453d;line-height:1.8}.processLine{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;position:relative}.processLine:before{content:"";position:absolute;left:4%;right:4%;top:46px;border-top:3px dashed var(--ink);z-index:-1}.step{border:2px solid var(--ink);border-radius:30px;background:var(--white);padding:24px;box-shadow:8px 8px 0 #111}.num{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:white;font-weight:900;border:2px solid var(--ink);margin-bottom:22px}.testimonial{position:relative;border:2px solid var(--ink);border-radius:42px;background:var(--ink);color:var(--paper);padding:50px;overflow:hidden}.testimonial:before{content:"“";position:absolute;right:40px;top:-28px;font-family:Playfair Display,serif;font-size:220px;opacity:.12}.testimonial p{font-family:Playfair Display,serif;font-size:clamp(34px,5.3vw,76px);line-height:.95;letter-spacing:-.06em;margin:0;max-width:950px}.testimonial span{display:block;color:#d7cfc3;margin-top:22px}.contactGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.contactPanel{border:2px solid var(--ink);border-radius:38px;background:var(--white);box-shadow:11px 11px 0 #111;padding:35px}.contactPanel h2{font-family:Playfair Display,serif;font-size:clamp(44px,6vw,92px);line-height:.87;letter-spacing:-.07em;margin:0 0 18px}.contactPanel p{font-size:18px;color:#48413a;line-height:1.7}.contactList{display:grid;gap:12px}.contactRow{display:flex;justify-content:space-between;gap:18px;border:2px solid var(--ink);border-radius:22px;background:#fff;padding:16px;font-weight:800}.endDock{position:fixed;left:50%;bottom:22px;transform:translate(-50%,120px);opacity:0;z-index:96;width:min(760px,calc(100% - 28px));border:2px solid var(--ink);background:rgba(255,250,243,.88);backdrop-filter:blur(18px);border-radius:30px;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:10px 10px 0 #111;transition:.45s cubic-bezier(.16,1,.3,1)}.endDock.show{transform:translate(-50%,0);opacity:1}.dockText{font-weight:900;line-height:1.2}.dockText small{display:block;color:var(--muted);font-weight:700}.whatsapp{background:#25d366;color:#06170b;border-color:var(--ink);box-shadow:5px 5px 0 #111}.floatingSketch{position:absolute;pointer-events:none;opacity:.22;z-index:-1}.floatingSketch.notes{right:-110px;top:40px;width:480px}.floatingSketch.arrows{left:-80px;bottom:-40px;width:760px}.filterBar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}.filterBtn{cursor:pointer;border:2px solid var(--ink);background:#fff;border-radius:999px;padding:10px 14px;font-weight:900}.filterBtn.active{background:var(--ink);color:var(--paper)}footer{padding:44px 0 120px;color:var(--muted);font-weight:700}.reveal{opacity:0;transform:translateY(28px)}.scrub{will-change:transform}
+
+/* Co-founder feature section */
+/* Redesigned LinkedIn timeline */
+.careerShell{position:relative;border:2px solid var(--ink);border-radius:42px;background:var(--white);box-shadow:14px 14px 0 #111;padding:42px;overflow:hidden}
+.careerTop{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end;margin-bottom:46px;position:relative;z-index:2}
+.careerTop h2{font-family:Playfair Display,serif;font-size:clamp(44px,6vw,88px);line-height:.9;letter-spacing:-.07em;margin:0;max-width:820px}
+.careerBadge{border:2px solid var(--ink);border-radius:999px;background:var(--sun);padding:18px 22px;font-weight:900;box-shadow:7px 7px 0 #111;white-space:nowrap;align-self:start}
+.careerBadge b{font-size:28px}
+.careerTrack{position:relative;display:grid;grid-template-columns:1fr 1fr;column-gap:78px;row-gap:34px;padding:16px 0 8px}
+.careerTrack:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:4px;transform:translateX(-50%);background:repeating-linear-gradient(to bottom,var(--ink) 0 16px,transparent 16px 28px);border-radius:999px;opacity:.9}
+.careerItem{position:relative;display:grid;grid-template-columns:78px 1fr;gap:18px;align-items:start;border:2px solid var(--ink);border-radius:30px;background:#fff;padding:22px;box-shadow:8px 8px 0 #111;transform-origin:center;min-height:210px;margin:0;z-index:2}
+.careerItem:nth-child(odd){grid-column:1;justify-self:stretch;margin-right:0}
+.careerItem:nth-child(even){grid-column:2;justify-self:stretch;margin-left:0;margin-top:70px}
+.careerItem:before{content:"";position:absolute;top:34px;width:22px;height:22px;border:3px solid var(--ink);background:var(--accent);border-radius:50%;box-shadow:0 0 0 7px var(--paper);z-index:3}
+.careerItem:nth-child(odd):before{right:-53px}
+.careerItem:nth-child(even):before{left:-53px}
+.careerItem:after{content:"";position:absolute;top:45px;width:38px;border-top:3px solid var(--ink)}
+.careerItem:nth-child(odd):after{right:-40px}
+.careerItem:nth-child(even):after{left:-40px}
+.careerLogo{width:70px;height:70px;border:2px solid var(--ink);border-radius:22px;display:grid;place-items:center;font-weight:950;font-size:19px;letter-spacing:-.04em;background:#e8ecff;box-shadow:5px 5px 0 #111;flex-shrink:0}
+.careerItem:nth-child(2) .careerLogo{background:#e7fbf6}.careerItem:nth-child(3) .careerLogo{background:#dff0ff}.careerItem:nth-child(4) .careerLogo{background:#fff1a6}
+.careerContent small{display:inline-flex;border:2px solid var(--ink);border-radius:999px;padding:6px 10px;background:var(--paper);font-weight:900;margin-bottom:10px}
+.careerContent h3{margin:0 0 8px;font-size:24px;letter-spacing:-.04em;line-height:1.12}
+.careerContent p{margin:0;color:#4a443d;line-height:1.62}
+.careerMeta{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.careerMeta span{border:1.8px solid var(--ink);border-radius:999px;padding:7px 10px;background:#fff;font-size:12px;font-weight:900}
+.careerSketch{position:absolute;right:-70px;top:30px;width:360px;opacity:.08;transform:rotate(-8deg)}
+
+.caseHub{display:grid;grid-template-columns:1fr 1fr;gap:22px}.caseGateway{border:2px solid var(--ink);border-radius:38px;background:var(--white);box-shadow:12px 12px 0 #111;overflow:hidden;display:grid;grid-template-rows:auto 1fr;transition:.28s transform,.28s box-shadow}.caseGateway:hover{transform:translate(-5px,-5px);box-shadow:17px 17px 0 #111}.caseGatewayVisual{height:330px;overflow:hidden;border-bottom:2px solid var(--ink);background:#fff}.caseGatewayVisual img{width:100%;display:block;transform:translateY(0);transition:transform 1.2s cubic-bezier(.16,1,.3,1)}.caseGateway:hover .caseGatewayVisual img{transform:translateY(-18%)}.caseGatewayBody{padding:30px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}.caseGateway h3{font-family:Playfair Display,serif;font-size:clamp(35px,4vw,58px);line-height:.92;letter-spacing:-.06em;margin:18px 0 15px}.caseGateway p{color:#464039;line-height:1.72;font-size:17px}.caseResultRow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}.caseResult{border:2px solid var(--ink);border-radius:18px;background:#fff1a6;padding:12px;font-weight:900;font-size:13px}.caseResult b{display:block;font-size:20px;color:var(--accent)}.caseOpen{display:inline-flex;width:max-content;border:2px solid var(--ink);border-radius:999px;background:var(--ink);color:var(--paper);padding:13px 17px;font-weight:900;box-shadow:5px 5px 0 var(--sun)}@media(max-width:940px){.caseHub{grid-template-columns:1fr}.caseResultRow{grid-template-columns:1fr}.caseGatewayVisual{height:260px}}
+
+@media(max-width:940px){.careerTop{grid-template-columns:1fr}.careerShell{padding:24px}.careerTrack{grid-template-columns:1fr;gap:22px;padding-left:24px}.careerTrack:before{left:8px;transform:none}.careerItem,.careerItem:nth-child(even),.careerItem:nth-child(odd){grid-column:1;grid-template-columns:1fr;transform:none!important;margin-top:0;min-height:0}.careerItem:before{left:-28px!important;right:auto!important;top:28px}.careerItem:after{left:-22px!important;right:auto!important;width:22px;top:39px}.careerBadge{width:max-content}.careerSketch{display:none}}
+
+.caseStudy{display:block!important;grid-template-columns:1fr!important;min-height:auto;padding:0;overflow:hidden}
+.caseStudy .projectText{display:block;padding:42px 42px 28px}
+.caseStudy .projectText h3{max-width:980px}
+.caseStudy .projectText p{max-width:980px;font-size:18px}
+.caseStudy .projectMedia{min-height:0!important;height:50vh!important;margin:0 42px 42px;border:2px solid var(--ink);border-radius:26px;background:#fff;overflow-y:auto;overflow-x:hidden;box-shadow:inset 0 0 0 1px rgba(22,21,20,.08);display:block!important}
+.caseStudy .projectMedia img{width:100%;height:auto;object-fit:contain;display:block;transform:none!important}
+.caseStudy .magnify{position:sticky;left:calc(100% - 160px);bottom:18px;display:inline-flex;margin:0 18px 18px auto;width:max-content}
+@media(max-width:940px){.caseStudy .projectText{padding:28px 22px 18px}.caseStudy .projectMedia{height:50vh!important;margin:0 20px 26px;border-radius:20px}.caseStudy .magnify{left:auto}}
+@media(max-width:940px){.nav{display:none}.heroGrid,.aboutGrid,.project,.project:nth-child(even),.skillsGrid,.processLine,.contactGrid{grid-template-columns:1fr}.project:nth-child(even) .projectMedia{order:0}.projectMedia{min-height:330px}.portraitWrap{min-height:560px}.portraitCard{left:20px}.sectionHead{display:block}.processLine:before{display:none}.timelineItem{grid-template-columns:1fr}.endDock{align-items:stretch;flex-direction:column}.topbar .cta{display:none}}
+
+.caseStudy:nth-child(even){grid-template-columns:1fr!important}
+.caseStudy:nth-child(even) .projectMedia{order:initial!important}
+.caseStudy .projectText{width:100%}
+.caseStudy .projectMedia{width:calc(100% - 84px)}
+@media(max-width:940px){.caseStudy .projectMedia{width:calc(100% - 40px)}}
+</style>
+
+<style id="bilingual-toggle-css">
+.lang-switch{display:inline-flex;align-items:center;gap:7px;border:2px solid var(--ink,#161514);border-radius:999px;background:var(--white,#fffaf3);padding:6px 8px;box-shadow:4px 4px 0 #111;margin-left:8px}
+.lang-switch button{border:0;background:transparent;color:var(--muted,#6c655d);font-weight:900;font-size:12px;letter-spacing:.06em;padding:7px 9px;border-radius:999px;cursor:pointer}
+.lang-switch button.active{background:var(--ink,#161514);color:var(--paper,#f7f1e8)}
+html[lang="de"] .lang-en-note{display:none}
+@media(max-width:900px){.lang-switch{padding:4px;gap:3px}.lang-switch button{padding:6px 7px}.topbar{gap:6px}.topbar .lang-switch{margin-left:auto}.top .lang-switch{margin-left:auto}}
+</style>
+
+</head>
+<body>
+<div class="noise"></div><div class="cursor"></div><div class="cursor-dot"></div>
+<div class="preloader"><b>Sara.</b></div>
+<nav class="topbar"><a class="brand" href="#home"><i>S</i> Sara Gilda</a><div class="nav"><a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div><a class="cta" href="#contact">Ready to collaborate</a></nav>
+<main id="home">
+<header class="hero wrap">
+  <img class="sketchOrbit parallax" data-speed="-0.05" src="assets/sketch-orbit.svg" alt="decorative hand drawn orbit">
+  <div class="heroGrid">
+    <div>
+      <div class="kicker reveal">Hello, I’m Sara, and I design with evidence, empathy, and AI fluency.</div>
+      <h1 class="reveal">I turn complex ideas into human experiences.</h1>
+      <p class="lead reveal">I’m Sara Gilda Amirhajlou, a UX Researcher and UX/UI Designer working across human-computer interaction, AI-driven systems, digital product design, and user-centered innovation.</p>
+      <div class="heroActions reveal"><a class="cta" href="#work">Explore my work</a><a class="cta alt magnetic" href="https://wa.me/4915753228769" target="_blank" rel="noreferrer">WhatsApp me</a></div>
+      <div class="stamp reveal">Available for meaningful collaboration</div>
+    </div>
+    <div class="portraitWrap reveal" data-tilt data-tilt-max="7" data-tilt-speed="700">
+      <div class="portraitCard"><img src="assets/sara.jpg" alt="Sara Gilda Amirhajlou portrait"></div>
+      <div class="note one parallax" data-speed="0.08"><small>My focus</small>AI + UX + human trust</div>
+      <div class="note two parallax" data-speed="-0.07"><small>My method</small>Research → product clarity</div>
+      <div class="floatingWord parallax" data-speed="0.12">thoughtful tech</div>
+    </div>
+  </div>
+</header>
+<div class="marquee"><div class="marqueeTrack"><span>UX Research</span><span>AI Experience Design</span><span>Product Strategy</span><span>Human-Centered Innovation</span><span>Interaction Design</span><span>Front-End Thinking</span></div></div>
+
+
+<section class="section wrap" id="about"><img class="floatingSketch notes parallax" data-speed="0.06" src="assets/sketch-notes.svg" alt="decorative notes"><div class="sectionHead"><div><div class="kicker reveal">About me</div><h2 class="reveal">I care about the moment technology becomes understandable.</h2></div><p class="reveal">My work connects research, product strategy, UX/UI design, AI systems, and front-end collaboration. I like being the person who helps a team move from ambiguity to a product people can trust.</p></div><div class="aboutGrid"><article class="paperCard reveal"><h3>My design belief</h3><p>I do not see AI as a visual effect or a shortcut. I see it as a product material that needs context, explanation, user control, and careful interaction design.</p><p>When I design, I ask: what should the user understand, decide, trust, question, and recover from?</p><div class="signature">— Sara</div></article><article class="paperCard reveal" id="experience-summary"><h3>Experience & background</h3><div class="timeline"><div class="timelineItem"><b>Current</b><div><h4>Co-Founder · Voxentra AI</h4><p>Building at the intersection of AI, human-centered technology, and digital product experience.</p></div></div><div class="timelineItem"><b>UX / Product</b><div><h4>UX Researcher · UX/UI Designer</h4><p>Research, product strategy, interface design, prototyping, and front-end-aware handoff for interdisciplinary teams.</p></div></div><div class="timelineItem"><b>Academic lens</b><div><h4>Human-Computer Interaction</h4><p>Interested in behavior, accessibility, trust, usability, and responsible adoption of emerging technology.</p></div></div></div></article></div></section>
+<section class="section wrap" id="experience">
+  <div class="careerShell">
+    <img class="careerSketch" src="assets/sketch-arrows.svg" alt="decorative timeline sketch">
+    <div class="careerTop">
+      <div><div class="kicker">Career timeline</div><h2>5+ years of UX, research, product, and AI consulting experience.</h2></div>
+      <div class="careerBadge"><b>5+ years</b> combined experience</div>
+    </div>
+    <div class="careerTrack">
+      <article class="careerItem"><div class="careerLogo">NH</div><div class="careerContent"><small>Jun 2023 — Apr 2026 · 2 yrs 11 mos</small><h3>AI Solutions Consultant · transportation industry</h3><p><strong>NaghleHaml · Middle East</strong><br>Worked with NaghleHaml, an analytical media platform focused on logistics and edge technologies in the Middle East, as an AI solutions consultant for the transportation industry.</p><div class="careerMeta"><span>AI Strategy</span><span>Transport Tech</span><span>Logistics Media</span><span>Consulting</span></div></div></article>
+      <article class="careerItem"><div class="careerLogo">SM</div><div class="careerContent"><small>Apr 2025 — Jul 2025 · 4 mos</small><h3>UX/UI Design & Development Intern · data science and AI</h3><p><strong>statmath gmbh · Siegen, Germany</strong><br>Designed a monitoring platform in collaboration with designers and data scientists, including wizard flows, dashboards, recording mode, and information-overload reduction.</p><div class="careerMeta"><span>HTML</span><span>Jira</span><span>AI + Data</span><span>Dashboard UX</span></div></div></article>
+      <article class="careerItem"><div class="careerLogo">L&I</div><div class="careerContent"><small>Jan 2024 — Nov 2024 · 11 mos</small><h3>UX Designer & Researcher · data protection by design</h3><p><strong>Law & Innovation Technology GmbH · Berlin, Germany</strong><br>Conducted user research and designed drop-off points and UX improvements for privacy, consent, and GDPR-related workflows.</p><div class="careerMeta"><span>Research</span><span>GDPR UX</span><span>HTML</span><span>Jira</span></div></div></article>
+      <article class="careerItem"><div class="careerLogo">US</div><div class="careerContent"><small>Oct 2022 — Jun 2024 · 1 yr 9 mos</small><h3>UX Researcher</h3><p><strong>Universität Siegen · Siegen, Germany</strong><br>Conducted interviews and survey responses, generating qualitative and quantitative insights for product and research decisions.</p><div class="careerMeta"><span>User Research</span><span>SPSS</span><span>HCI</span><span>Evaluation</span></div></div></article>
+      <article class="careerItem"><div class="careerLogo">BK</div><div class="careerContent"><small>Nov 2018 — Nov 2021 · 3 yrs 1 mo</small><h3>UX Designer</h3><p><strong>Bank Keshavarzi · Iran</strong><br>Researched information security and banking UX, identifying unclear interfaces and misleading feedback that contributed to user errors and unsafe behaviors.</p><div class="careerMeta"><span>User Research</span><span>Interface Design</span><span>Banking UX</span><span>Risk reduction</span></div></div></article>
+    </div>
+  </div>
+</section>
+<section class="section wrap" id="work"><div class="sectionHead"><div><div class="kicker reveal">Selected case studies</div><h2 class="reveal">Two full UX stories</h2></div><p class="reveal">I separated the case studies from the homepage so the main page stays focused, while each project has enough space for process, research, testing, visuals, and outcomes.</p></div><div class="caseHub">
+<a class="caseGateway reveal" href="Li-case-study.html"><div class="caseGatewayVisual"><img src="assets/chrome-extension.png" alt="GDPR consent management case study"></div><div class="caseGatewayBody"><div><span class="tag">Case study · GDPR consent management</span><h3>How I translated complex GDPR requirements into usable configuration tools?</h3><p>Designing a legally compliant, human-centred consent management system, a Customer Panel and an Auditing Panel (B2B), balancing strict EU data protection law with intuitive privacy controls.</p><div class="caseResultRow"><span class="caseResult"><b>50%</b>drop-off reduced</span><span class="caseResult"><b>40%</b>task success improved</span><span class="caseResult"><b>30%</b>error rate reduced</span></div></div><span class="caseOpen">Open full Case Study</span></div></a>
+<a class="caseGateway reveal" href="ifm-case-study.html"><div class="caseGatewayVisual"><img src="assets/web-app.png" alt="Industrial IoT platform case study"></div><div class="caseGatewayBody"><div><span class="tag">Case study · Industrial IoT platform</span><h3>How I optimized Time-on-Task and reduced error rate?</h3><p>Designing the configuration wizard, dashboard architecture, and integrating an AI chat assistant for an industrial monitoring platform used by production operators across manufacturing facilities.</p><div class="caseResultRow"><span class="caseResult"><b>25%</b>time-on-task reduced</span><span class="caseResult"><b>20%</b>error rate reduced</span><span class="caseResult"><b>↑</b>transparency & control</span></div></div><span class="caseOpen">Open full Case Study</span></div></a>
+</div></section>
+<section class="section wrap" id="skills"><img class="floatingSketch arrows parallax" data-speed="-0.05" src="assets/sketch-arrows.svg" alt="decorative arrows"><div class="sectionHead"><div><div class="kicker reveal">Capabilities</div><h2 class="reveal"></h2></div></div><div class="skillsGrid">
+<article class="skillCard reveal"><h3>UX Research</h3><ul><li>User interviews</li><li>Persona development</li><li>Journey mapping</li><li>Insight synthesis</li></ul></article>
+<article class="skillCard reveal"><h3>UX/UI Design</h3><ul><li>Wireframes and prototypes</li><li>Design systems</li><li>Interaction Design</li><li>Accessibility awareness</li></ul></article>
+<article class="skillCard reveal"><h3>AI Skills</h3><ul><li>Prompt engineering</li><li>AI-assisted research</li><li>Human-in-the-loop flows</li><li>Explainable AI UX</li></ul></article>
+<article class="skillCard reveal"><h3>Product Thinking</h3><ul><li>Product strategy</li><li>Information architecture</li><li>Prioritization</li><li>Business/user alignment</li></ul></article>
+<article class="skillCard reveal"><h3>Team Skills</h3><ul><li>Cross-functional collaboration</li><li>Clear communication</li><li>Active listening</li><li>Constructive feedback</li></ul></article>
+<article class="skillCard reveal"><h3>Technical Fluency</h3><ul><li>Front-end awareness</li><li>Developer handoff</li><li>Interactive prototyping</li><li>Design-to-build thinking</li></ul></article>
+</div></section>
+<section class="section wrap" id="process"><div class="sectionHead"><div><div class="kicker reveal">Process</div><h2 class="reveal">A clear path from unknowns to usable product experiences.</h2></div></div><div class="processLine"><div class="step reveal"><div class="num">01</div><h3>Discover</h3><p>I study people, context, constraints, and the real problem behind the request.</p></div><div class="step reveal"><div class="num">02</div><h3>Define</h3><p>I turn messy findings into priorities, opportunity areas, and product direction.</p></div><div class="step reveal"><div class="num">03</div><h3>Design</h3><p>I prototype flows, interfaces, and AI interactions with clear decision logic.</p></div><div class="step reveal"><div class="num">04</div><h3>Validate</h3><p>I test assumptions, refine details, and prepare the work for real collaboration.</p></div></div></section>
+<section class="section wrap"><div class="testimonial reveal"><p>“I want every product I touch to feel more clear, more humane, and more useful than when I found it.”</p><span>First-person positioning statement · Sara Gilda Amirhajlou</span></div></section>
+<section class="section wrap" id="contact"><div class="contactGrid"><div class="contactPanel reveal"><div class="kicker">Ready to collaborate</div><h2>Let’s build technology people actually want to use.</h2><p>I’m open to meaningful collaborations in UX research, AI product experiences, human-centered digital innovation, and product design.</p><div class="heroActions"><a class="cta whatsapp" href="https://wa.me/4915753228769" target="_blank" rel="noreferrer">WhatsApp directly</a><a class="cta alt" href="https://www.linkedin.com/in/sara-gilda-amirhajlou-162544135/" target="_blank" rel="noreferrer">Connect with me on LinkedIn</a></div></div><div class="contactPanel reveal"><h3>Best fit</h3><div class="contactList"><div class="contactRow"><span>Role</span><strong>UX/UI Designer & UX Researcher</strong></div><div class="contactRow"><span>Focus</span><strong>AI + Human-Centered Tech</strong></div><div class="contactRow"><span>Style</span><strong>Research-led and collaborative</strong></div><div class="contactRow"><span>Direct</span><strong>+49 1575 3228769</strong></div></div></div></div></section>
+<div id="endSentinel"></div>
+</main>
+<div class="endDock"><div class="dockText">I’m ready for meaningful collaboration.<small>UX/UI Design · UX Research · AI UX · Product Design</small></div><a class="cta whatsapp" href="https://wa.me/4915753228769" target="_blank" rel="noreferrer">WhatsApp Sara</a></div>
+<footer class="wrap">© <span id="year"></span> Sara Gilda Amirhajlou</footer>
+<link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/vanilla-tilt.min.js"></script>
+<script src="assets/js/typed.umd.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+$(function(){
+  $('#year').text(new Date().getFullYear());
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.to('.preloader b',{y:-20,opacity:0,duration:.65,ease:'power2.inOut',delay:.55});
+  gsap.to('.preloader',{yPercent:-100,duration:.9,ease:'expo.inOut',delay:.9});
+  $('.nav a, .brand, a[href^="#"]').on('click',function(e){var t=$(this).attr('href'); if(t&&t.length>1&&$(t).length){e.preventDefault(); $('html,body').animate({scrollTop:$(t).offset().top-70},850,'easeInOutQuart')}});
+  $(window).on('mousemove',function(e){$('.cursor').css({left:e.clientX,top:e.clientY});$('.cursor-dot').css({left:e.clientX,top:e.clientY})});
+  $('a,button,.project').on('mouseenter',function(){$('.cursor').css({width:72,height:72,background:'rgba(255,94,68,.10)'})}).on('mouseleave',function(){$('.cursor').css({width:46,height:46,background:'transparent'})});
+  gsap.utils.toArray('.reveal').forEach((el,i)=>{gsap.to(el,{opacity:1,y:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',once:true},delay:(i%3)*.04})});
+  gsap.to('.marqueeTrack',{xPercent:-50,repeat:-1,duration:28,ease:'none'});
+  gsap.utils.toArray('.parallax').forEach(el=>{const speed=parseFloat(el.dataset.speed||0.05);gsap.to(el,{y:()=>window.innerHeight*speed,ease:'none',scrollTrigger:{trigger:document.body,start:'top top',end:'bottom bottom',scrub:true}})});
+  gsap.utils.toArray('.scrub').forEach(img=>{gsap.fromTo(img,{scale:1.12,y:-28},{scale:1.02,y:28,ease:'none',scrollTrigger:{trigger:img.closest('.project'),start:'top bottom',end:'bottom top',scrub:true}})});
+
+  const careerTrack=document.querySelector('.careerTrack');
+  if(careerTrack&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    gsap.set('.careerBadge',{scale:.92,opacity:0,rotate:-3});
+    gsap.set('.careerItem',{opacity:0,y:40});
+    gsap.timeline({scrollTrigger:{trigger:careerTrack,start:'top 84%',once:true,invalidateOnRefresh:true}})
+      .to('.careerBadge',{scale:1,opacity:1,rotate:0,duration:.65,ease:'back.out(1.35)'})
+      .to('.careerItem',{opacity:1,y:0,duration:.8,stagger:.12,ease:'power3.out',clearProps:'transform'},0.06);
+  }
+  $('.popup').magnificPopup({type:'image',closeOnContentClick:true,mainClass:'mfp-fade'});
+  $('.filterBtn').on('click',function(){var f=$(this).data('filter');$('.filterBtn').removeClass('active');$(this).addClass('active');$('.filterItem').each(function(){var show=f==='all'||String($(this).data('cat')).includes(f);gsap.to(this,{autoAlpha:show?1:0,scale:show?1:.96,height:show?'auto':0,marginBottom:show?22:0,duration:.38,ease:'power2.out'})})});
+  const dock=document.querySelector('.endDock'); const sentinel=document.querySelector('#endSentinel'); new IntersectionObserver((entries)=>{entries.forEach(e=>dock.classList.toggle('show',e.isIntersecting))},{threshold:.1}).observe(sentinel);
+});
+</script>
+
+<script id="bilingual-toggle-js">
+(function(){
+  const de = {
+  "Sara Gilda Amirhajlou — UX Research, AI UX & Product Design": "Sara Gilda Amirhajlou — UX Research, AI UX & Produktdesign",
+  "← Sara Gilda": "← Sara Gilda",
+  "Back to case studies": "Zurück zu den Case Studies",
+  "Sara Gilda": "Sara Gilda",
+  "About": "Über mich",
+  "Experience": "Erfahrung",
+  "Work": "Arbeiten",
+  "Skills": "Skills",
+  "Contact": "Kontakt",
+  "Ready to collaborate": "Bereit zur Zusammenarbeit",
+  "Ready to collaborate?": "Bereit zur Zusammenarbeit?",
+  "WhatsApp Sara": "Sara per WhatsApp kontaktieren",
+  "WhatsApp me": "WhatsApp",
+  "WhatsApp directly": "Direkt per WhatsApp",
+  "Connect with me on LinkedIn": "Verbinden Sie sich mit mir auf LinkedIn",
+  "Open full Case Study": "Vollständige Case Study öffnen",
+  "Open to meaningful UX research, product design, and human-centered AI experience work.": "Offen für sinnvolle Projekte in UX Research, Produktdesign und menschenzentrierter AI Experience.",
+  "Sara.": "Sara.",
+  "Hello, I’m Sara, and I design with evidence, empathy, and AI fluency.": "Hallo, ich bin Sara, und ich gestalte mit Evidenz, Empathie und AI-Kompetenz.",
+  "I turn complex ideas into human experiences.": "Ich verwandle komplexe Ideen in menschliche Erlebnisse.",
+  "I’m Sara Gilda Amirhajlou, a UX Researcher and UX/UI Designer working across human-computer interaction, AI-driven systems, digital product design, and user-centered innovation.": "Ich bin Sara Gilda Amirhajlou, UX Researcher und UX/UI Designerin an der Schnittstelle von Human-Computer Interaction, AI-gestützten Systemen, digitalem Produktdesign und nutzerzentrierter Innovation.",
+  "Explore my work": "Meine Arbeiten ansehen",
+  "Available for meaningful collaboration": "Verfügbar für sinnvolle Zusammenarbeit",
+  "My focus": "Mein Fokus",
+  "AI + UX + human trust": "AI + UX + menschliches Vertrauen",
+  "My method": "Meine Methode",
+  "Research → product clarity": "Research → Produktklarheit",
+  "thoughtful tech": "durchdachte Technologie",
+  "UX Research": "UX Research",
+  "AI Experience Design": "AI Experience Design",
+  "Product Strategy": "Produktstrategie",
+  "Human-Centered Innovation": "Menschenzentrierte Innovation",
+  "Interaction Design": "Interaction Design",
+  "Front-End Thinking": "Front-End-Verständnis",
+  "About me": "Über mich",
+  "I care about the moment technology becomes understandable.": "Mir geht es um den Moment, in dem Technologie verständlich wird.",
+  "My work connects research, product strategy, UX/UI design, AI systems, and front-end collaboration. I like being the person who helps a team move from ambiguity to a product people can trust.": "Meine Arbeit verbindet Research, Produktstrategie, UX/UI Design, AI-Systeme und die Zusammenarbeit mit Front-End-Teams. Ich helfe Teams gern dabei, aus Unklarheit ein Produkt zu entwickeln, dem Menschen vertrauen können.",
+  "My design belief": "Mein Designverständnis",
+  "I do not see AI as a visual effect or a shortcut. I see it as a product material that needs context, explanation, user control, and careful interaction design.": "Ich sehe AI nicht als visuellen Effekt oder Abkürzung. Ich sehe sie als Produktmaterial, das Kontext, Erklärung, Nutzerkontrolle und sorgfältiges Interaction Design braucht.",
+  "When I design, I ask: what should the user understand, decide, trust, question, and recover from?": "Wenn ich gestalte, frage ich: Was soll der Nutzer verstehen, entscheiden, vertrauen, hinterfragen und bei Bedarf korrigieren können?",
+  "Experience & background": "Erfahrung & Hintergrund",
+  "Current": "Aktuell",
+  "Co-Founder · Voxentra AI": "Co-Founder · Voxentra AI",
+  "Building at the intersection of AI, human-centered technology, and digital product experience.": "Aufbau von Produkten an der Schnittstelle von AI, menschenzentrierter Technologie und digitaler Produkterfahrung.",
+  "UX / Product": "UX / Produkt",
+  "UX Researcher · UX/UI Designer": "UX Researcher · UX/UI Designerin",
+  "Research, product strategy, interface design, prototyping, and front-end-aware handoff for interdisciplinary teams.": "Research, Produktstrategie, Interface Design, Prototyping und front-end-bewusste Übergaben für interdisziplinäre Teams.",
+  "Academic lens": "Akademische Perspektive",
+  "Human-Computer Interaction": "Human-Computer Interaction",
+  "Interested in behavior, accessibility, trust, usability, and responsible adoption of emerging technology.": "Interesse an Verhalten, Barrierefreiheit, Vertrauen, Usability und verantwortungsvoller Einführung neuer Technologien.",
+  "Career timeline": "Beruflicher Werdegang",
+  "5+ years of UX, research, product, and AI consulting experience.": "5+ Jahre Erfahrung in UX, Research, Produktarbeit und AI Consulting.",
+  "5+ years": "5+ Jahre",
+  "combined experience": "kombinierte Erfahrung",
+  "Jun 2023 — Apr 2026 · 2 yrs 11 mos": "Juni 2023 — April 2026 · 2 Jahre 11 Monate",
+  "AI Solutions Consultant · transportation industry": "AI Solutions Consultant · Transportbranche",
+  "NaghleHaml · Middle East": "NaghleHaml · Naher Osten",
+  "Worked with NaghleHaml, an analytical media platform focused on logistics and edge technologies in the Middle East, as an AI solutions consultant for the transportation industry.": "Zusammenarbeit mit NaghleHaml, einer analytischen Medienplattform für Logistik und Edge-Technologien im Nahen Osten, als AI Solutions Consultant für die Transportbranche.",
+  "AI Strategy": "AI-Strategie",
+  "Transport Tech": "Transporttechnologie",
+  "Logistics Media": "Logistik-Medien",
+  "Consulting": "Beratung",
+  "Apr 2025 — Jul 2025 · 4 mos": "April 2025 — Juli 2025 · 4 Monate",
+  "UX/UI Design & Development Intern · data science and AI": "UX/UI Design & Development Intern · Data Science und AI",
+  "statmath gmbh · Siegen, Germany": "statmath gmbh · Siegen, Deutschland",
+  "Designed a monitoring platform in collaboration with designers and data scientists, including wizard flows, dashboards, recording mode, and information-overload reduction.": "Gestaltung einer Monitoring-Plattform in Zusammenarbeit mit Designern und Data Scientists, einschließlich Wizard-Flows, Dashboards, Recording-Modus und Reduktion von Informationsüberlastung.",
+  "HTML": "HTML",
+  "Jira": "Jira",
+  "AI + Data": "AI + Daten",
+  "Dashboard UX": "Dashboard UX",
+  "SPSS": "SPSS",
+  "HCI": "HCI",
+  "Jan 2024 — Nov 2024 · 11 mos": "Jan. 2024 — Nov. 2024 · 11 Monate",
+  "UX Designer & Researcher · data protection by design": "UX Designerin & Researcherin · Data Protection by Design",
+  "Law & Innovation Technology GmbH · Berlin, Germany": "Law & Innovation Technology GmbH · Berlin, Deutschland",
+  "Conducted user research and designed drop-off points and UX improvements for privacy, consent, and GDPR-related workflows.": "Durchführung von User Research und Gestaltung von UX-Verbesserungen für Privacy-, Consent- und DSGVO-bezogene Workflows.",
+  "Research": "Research",
+  "GDPR UX": "DSGVO UX",
+  "Oct 2022 — Jun 2024 · 1 yr 9 mos": "Okt. 2022 — Juni 2024 · 1 Jahr 9 Monate",
+  "UX Researcher": "UX Researcher",
+  "Universität Siegen · Siegen, Germany": "Universität Siegen · Siegen, Deutschland",
+  "Conducted interviews and survey responses, generating qualitative and quantitative insights for product and research decisions.": "Durchführung von Interviews und Auswertung von Umfragen zur Gewinnung qualitativer und quantitativer Insights für Produkt- und Forschungsentscheidungen.",
+  "User Research": "User Research",
+  "Evaluation": "Evaluation",
+  "Nov 2018 — Nov 2021 · 3 yrs 1 mo": "Nov. 2018 — Nov. 2021 · 3 Jahre 1 Monat",
+  "UX Designer": "UX Designerin",
+  "Bank Keshavarzi · Iran": "Bank Keshavarzi · Iran",
+  "Researched information security and banking UX, identifying unclear interfaces and misleading feedback that contributed to user errors and unsafe behaviors.": "Research zu Informationssicherheit und Banking UX; Identifikation unklarer Interfaces und irreführenden Feedbacks, das zu Nutzerfehlern und unsicherem Verhalten beitrug.",
+  "Interface Design": "Interface Design",
+  "Banking UX": "Banking UX",
+  "Risk reduction": "Risikoreduktion",
+  "Selected case studies": "Ausgewählte Case Studies",
+  "Two full UX stories": "Zwei vollständige UX-Geschichten",
+  "I separated the case studies from the homepage so the main page stays focused, while each project has enough space for process, research, testing, visuals, and outcomes.": "Ich habe die Case Studies von der Startseite getrennt, damit die Hauptseite fokussiert bleibt und jedes Projekt genug Raum für Prozess, Research, Testing, Visuals und Ergebnisse hat.",
+  "Case study · GDPR consent management": "Case Study · DSGVO Consent Management",
+  "How I translated complex GDPR requirements into usable configuration tools?": "Wie ich komplexe DSGVO-Anforderungen in nutzbare Konfigurationstools übersetzt habe?",
+  "Designing a legally compliant, human-centred consent management system, a Customer Panel and an Auditing Panel (B2B), balancing strict EU data protection law with intuitive privacy controls.": "Gestaltung eines rechtskonformen, menschenzentrierten Consent-Management-Systems, eines Customer Panels und eines Auditing Panels (B2B) — im Gleichgewicht zwischen striktem EU-Datenschutzrecht und intuitiven Privacy Controls.",
+  "drop-off reduced": "Drop-off reduziert",
+  "task success improved": "Task Success verbessert",
+  "error rate reduced": "Fehlerrate reduziert",
+  "Case study · Industrial IoT platform": "Case Study · Industrielle IoT-Plattform",
+  "How I optimized Time-on-Task and reduced error rate?": "Wie ich Time-on-Task optimiert und die Fehlerrate reduziert habe?",
+  "Designing the configuration wizard, dashboard architecture, and integrating an AI chat assistant for an industrial monitoring platform used by production operators across manufacturing facilities.": "Gestaltung des Konfigurations-Wizards, der Dashboard-Architektur und Integration eines AI-Chat-Assistenten für eine industrielle Monitoring-Plattform, die von Produktionsoperatoren in Fertigungsanlagen genutzt wird.",
+  "time-on-task reduced": "Time-on-Task reduziert",
+  "transparency & control": "Transparenz & Kontrolle",
+  "Capabilities": "Kompetenzen",
+  "User interviews": "User Interviews",
+  "Persona development": "Persona-Entwicklung",
+  "Journey mapping": "Journey Mapping",
+  "Insight synthesis": "Insight-Synthese",
+  "UX/UI Design": "UX/UI Design",
+  "Wireframes and prototypes": "Wireframes und Prototypen",
+  "Design systems": "Designsysteme",
+  "Accessibility awareness": "Barrierefreiheitsbewusstsein",
+  "AI Skills": "AI-Skills",
+  "Prompt engineering": "Prompt Engineering",
+  "AI-assisted research": "AI-gestützter Research",
+  "Human-in-the-loop flows": "Human-in-the-loop-Flows",
+  "Explainable AI UX": "Explainable AI UX",
+  "Product Thinking": "Produktdenken",
+  "Product strategy": "Produktstrategie",
+  "Information architecture": "Informationsarchitektur",
+  "Prioritization": "Priorisierung",
+  "Business/user alignment": "Abgleich von Business- und Nutzerzielen",
+  "Team Skills": "Team-Skills",
+  "Cross-functional collaboration": "Funktionsübergreifende Zusammenarbeit",
+  "Clear communication": "Klare Kommunikation",
+  "Active listening": "Aktives Zuhören",
+  "Constructive feedback": "Konstruktives Feedback",
+  "Technical Fluency": "Technisches Verständnis",
+  "Front-end awareness": "Front-End-Bewusstsein",
+  "Developer handoff": "Developer Handoff",
+  "Interactive prototyping": "Interaktives Prototyping",
+  "Design-to-build thinking": "Design-to-build-Denken",
+  "Process": "Prozess",
+  "A clear path from unknowns to usable product experiences.": "Ein klarer Weg von Unklarheit zu nutzbaren Produkterlebnissen.",
+  "Discover": "Entdecken",
+  "I study people, context, constraints, and the real problem behind the request.": "Ich untersuche Menschen, Kontext, Einschränkungen und das eigentliche Problem hinter der Anfrage.",
+  "Define": "Definieren",
+  "I turn messy findings into priorities, opportunity areas, and product direction.": "Ich verwandle unstrukturierte Erkenntnisse in Prioritäten, Opportunity Areas und Produktrichtung.",
+  "Design": "Gestalten",
+  "I prototype flows, interfaces, and AI interactions with clear decision logic.": "Ich prototypisiere Flows, Interfaces und AI-Interaktionen mit klarer Entscheidungslogik.",
+  "Validate": "Validieren",
+  "I test assumptions, refine details, and prepare the work for real collaboration.": "Ich teste Annahmen, verfeinere Details und bereite die Arbeit für echte Zusammenarbeit vor.",
+  "“I want every product I touch to feel more clear, more humane, and more useful than when I found it.”": "„Ich möchte, dass jedes Produkt, an dem ich arbeite, klarer, menschlicher und nützlicher wird, als ich es vorgefunden habe.“",
+  "First-person positioning statement · Sara Gilda Amirhajlou": "Positionierung in der Ich-Perspektive · Sara Gilda Amirhajlou",
+  "Let’s build technology people actually want to use.": "Lasst uns Technologie bauen, die Menschen wirklich nutzen wollen.",
+  "I’m open to meaningful collaborations in UX research, AI product experiences, human-centered digital innovation, and product design.": "Ich bin offen für sinnvolle Zusammenarbeit in UX Research, AI Product Experiences, menschenzentrierter digitaler Innovation und Produktdesign.",
+  "Best fit": "Passende Zusammenarbeit",
+  "Role": "Rolle",
+  "UX/UI Designer & UX Researcher": "UX/UI Designer & UX Researcher",
+  "Focus": "Fokus",
+  "AI + Human-Centered Tech": "AI + menschenzentrierte Technologie",
+  "Style": "Arbeitsstil",
+  "Research-led and collaborative": "Research-orientiert und kollaborativ",
+  "Direct": "Direkt",
+  "I’m ready for meaningful collaboration.": "Ich bin bereit für sinnvolle Zusammenarbeit.",
+  "UX/UI Design · UX Research · AI UX · Product Design": "UX/UI Design · UX Research · AI UX · Produktdesign",
+  "Sara Gilda Amirhajlou — One-page personal portfolio.": "Sara Gilda Amirhajlou — Einseitiges persönliches Portfolio.",
+  "Project snapshot": "Projektüberblick",
+  "Context, role, tools, and responsibilities.": "Kontext, Rolle, Tools und Verantwortlichkeiten.",
+  "Product": "Produkt",
+  "Duration": "Dauer",
+  "one year": "ein Jahr",
+  "4 months": "4 Monate",
+  "Tasks": "Aufgaben",
+  "Tools": "Tools",
+  "Work type": "Arbeitsform",
+  "Team Project at ifm statmath GmbH": "Teamprojekt bei ifm statmath GmbH",
+  "Full case visual": "Vollständige Case-Visualisierung",
+  "User persona": "User Persona",
+  "Results": "Ergebnisse",
+  "Results:": "Ergebnisse:",
+  "Project Overview": "Projektüberblick",
+  "Understanding the context": "Den Kontext verstehen",
+  "The Problem": "Das Problem",
+  "The goals": "Die Ziele",
+  "Research methods": "Research-Methoden",
+  "Key testing findings & what changed": "Wichtige Testing-Erkenntnisse & Änderungen",
+  "Key testing findings & what changed:": "Wichtige Testing-Erkenntnisse & Änderungen:",
+  "What I Learned": "Was ich gelernt habe",
+  "What I Learned:": "Was ich gelernt habe:",
+  "How I translated complex GDPR requirements into usable configuration tools for cookie consent management? — Sara Gilda Amirhajlou": "Wie ich komplexe DSGVO-Anforderungen in nutzbare Konfigurationstools für Cookie Consent Management übersetzt habe — Sara Gilda Amirhajlou",
+  "L&I Technology GmbH · GDPR UX": "L&I Technology GmbH · DSGVO UX",
+  "How I translated complex GDPR requirements into usable configuration tools for cookie consent management?": "Wie ich komplexe DSGVO-Anforderungen in nutzbare Konfigurationstools für Cookie Consent Management übersetzt habe?",
+  "Reduced user drop-off by 50%": "User Drop-off um 50% reduziert",
+  "Improved Task Success Rate by 40%": "Task Success Rate um 40% verbessert",
+  "Reduced Error Rate by 30%": "Fehlerrate um 30% reduziert",
+  "A browser extension & privacy panels": "Eine Browser-Erweiterung & Privacy Panels",
+  "UX Researcher & UX Designer": "UX Researcher & UX Designerin",
+  "User Research,": "User Research,",
+  "Product Traking, Design": "Produkttracking, Design",
+  "Tools: Figma, Notion, SoSci Survey, Prolific, Grafana": "Tools: Figma, Notion, SoSci Survey, Prolific, Grafana",
+  "Work type: Team Project at L&I Technology GmbH": "Arbeitsform: Teamprojekt bei L&I Technology GmbH",
+  "Product: A browser extension & privacy panels": "Produkt: Eine Browser-Erweiterung & Privacy Panels",
+  "Duration: one year": "Dauer: ein Jahr",
+  "Role: UX Researcher & UX Designer": "Rolle: UX Researcher & UX Designerin",
+  "Tasks: User Research,": "Aufgaben: User Research,",
+  "Consentor - a browser extension": "Consentor — eine Browser-Erweiterung",
+  "At Law & Innovation Technology GmbH (L&I), Berlin, I collaborated in the development of a consent agent, a browser extension that allows consumers to manage and transmit their consent decisions to digital services, helping them understand the benefits and risks of data sharing, validated with over 1,000 users across EU member states. I also designed a Customer Panel and an Auditing Panel for website publishers to configure and verify their GDPR compliance.": "Bei Law & Innovation Technology GmbH (L&I) in Berlin arbeitete ich an der Entwicklung eines Consent Agents mit — einer Browser-Erweiterung, mit der Verbraucher ihre Einwilligungsentscheidungen verwalten und an digitale Dienste übermitteln können. Ziel war es, Nutzen und Risiken der Datenweitergabe verständlicher zu machen. Die Lösung wurde mit über 1.000 Nutzerinnen und Nutzern in EU-Mitgliedstaaten validiert. Zusätzlich gestaltete ich ein Customer Panel und ein Auditing Panel, mit denen Website-Publisher ihre DSGVO-Konformität konfigurieren und überprüfen können.",
+  "My role was within the empathize, define and test phases of the design thinking process. I conducted user research after which the Consentor was designed based on the research team findings, I tested and tracked it while was using by the real users across EU for the first time.": "Meine Rolle lag in den Phasen Empathize, Define und Test des Design-Thinking-Prozesses. Ich führte User Research durch, auf dessen Grundlage Consentor anhand der Research-Ergebnisse gestaltet wurde. Anschließend testete und trackte ich die Nutzung, als echte Nutzerinnen und Nutzer in der EU das Produkt erstmals verwendeten.",
+  "Internet users need clear and manageable ways to understand and control their data consent decisions, because complex cookie banners, legal language, and inconsistent interfaces cause confusion, consent fatigue, and a loss of trust in digital services.": "Internetnutzer brauchen klare und handhabbare Wege, um ihre Einwilligungsentscheidungen zu verstehen und zu kontrollieren. Komplexe Cookie-Banner, juristische Sprache und uneinheitliche Interfaces führen zu Verwirrung, Consent Fatigue und Vertrauensverlust in digitale Dienste.",
+  "More control - giving users genuine, granular control over their data": "Mehr Kontrolle — Nutzerinnen und Nutzern echte, granulare Kontrolle über ihre Daten geben",
+  "Fewer interruptions - reducing cognitive burden of repeated consent requests across digital services": "Weniger Unterbrechungen — die kognitive Belastung durch wiederholte Consent-Anfragen über digitale Dienste hinweg reduzieren",
+  "Legal compliance - every design decision meeting GDPR requirements without sacrificing usability": "Rechtskonformität — jede Designentscheidung erfüllt DSGVO-Anforderungen, ohne Usability zu opfern",
+  "EU internet user:": "EU-Internetnutzer:",
+  "“I have to accept the cookies to use the website, I just click accept all. I don't understand what I'm actually agreeing to.”": "„Ich muss die Cookies akzeptieren, um die Website zu nutzen, also klicke ich einfach auf Alle akzeptieren. Ich verstehe nicht, wozu ich eigentlich zustimme.“",
+  "User surveys (SoSci Survey & participant recruitment on Prolific): Distributed to EU internet users, collecting attitudes toward consent, privacy concerns, and current behaviours with cookie banners.": "User Surveys (SoSci Survey & Teilnehmerrekrutierung über Prolific): Verteilung an EU-Internetnutzer, um Einstellungen zu Consent, Datenschutzbedenken und aktuelle Verhaltensweisen bei Cookie-Bannern zu erfassen.",
+  "Key research challenge": "Zentrale Research-Herausforderung",
+  "Key pain points identified": "Identifizierte zentrale Pain Points",
+  "Consent fatigue": "Consent Fatigue",
+  "Legal language": "Juristische Sprache",
+  "Dark patterns": "Dark Patterns",
+  "No centralised control": "Keine zentrale Kontrolle",
+  "No transparency": "Keine Transparenz",
+  "Working within legal constraints": "Arbeiten innerhalb rechtlicher Vorgaben",
+  "Since any interaction patterns were predefined by regulation, my UX work had to find clarity and trust within those boundaries, not around them.": "Da viele Interaktionsmuster durch Regulierung vorgegeben waren, musste meine UX-Arbeit Klarheit und Vertrauen innerhalb dieser Grenzen schaffen — nicht an ihnen vorbei.",
+  "Regular sessions with legal experts": "Regelmäßige Sessions mit Rechtsexperten",
+  "Developer discovery sessions": "Developer Discovery Sessions",
+  "GDPR document analysis": "DSGVO-Dokumentenanalyse",
+  "How I optimized Time-on-Task and reduced error rate for an industrial IoT platform? — Sara Gilda Amirhajlou": "Wie ich Time-on-Task optimiert und die Fehlerrate für eine industrielle IoT-Plattform reduziert habe — Sara Gilda Amirhajlou",
+  "ifm statmath GmbH · Industrial IoT UX": "ifm statmath GmbH · Industrial IoT UX",
+  "How I optimized Time-on-Task and reduced error rate for an industrial IoT platform?": "Wie ich Time-on-Task optimiert und die Fehlerrate für eine industrielle IoT-Plattform reduziert habe?",
+  "Reduced Time-on-Task for wizard configuration by 25%": "Time-on-Task für die Wizard-Konfiguration um 25% reduziert",
+  "Reduced Error Rate during system setup by 20%": "Fehlerrate während des System-Setups um 20% reduziert",
+  "Improved system transparency and user control": "Systemtransparenz und Nutzerkontrolle verbessert",
+  "Industrial monitoring web App": "Industrielle Monitoring-Web-App",
+  "UX/UI Designer": "UX/UI Designerin",
+  "UX/UI Design and Testing": "UX/UI Design und Testing",
+  "Product: Industrial monitoring web App": "Produkt: Industrielle Monitoring-Web-App",
+  "Duration: 4 months": "Dauer: 4 Monate",
+  "Role: UX/UI Designer": "Rolle: UX/UI Designerin",
+  "Tasks: UX/UI Design and Testing": "Aufgaben: UX/UI Design und Testing",
+  "Tools: Figma, FigJam, Angular": "Tools: Figma, FigJam, Angular",
+  "Work type: Team Project at ifm statmath GmbH": "Arbeitsform: Teamprojekt bei ifm statmath GmbH",
+  "ifm is a global leader in industrial automation sensors and software. Their IoT monitoring platform allows production operators to supervise automated manufacturing systems (tracking metrics, detecting faults, and configuring alerts) in real time.": "ifm ist ein weltweit führender Anbieter von Sensoren und Software für industrielle Automatisierung. Die IoT-Monitoring-Plattform ermöglicht Produktionsoperatoren, automatisierte Fertigungssysteme in Echtzeit zu überwachen — inklusive Metriken, Fehlererkennung und Alert-Konfiguration.",
+  "Industrial operators need an efficient and intuitive way to monitor processes and detect issues, because complex, information-heavy monitoring systems with poor workflows lead to slow task completion, cognitive load, errors, and reduced trust in the system.": "Industrieoperatoren benötigen eine effiziente und intuitive Möglichkeit, Prozesse zu überwachen und Probleme zu erkennen. Komplexe, informationslastige Monitoring-Systeme mit schlechten Workflows führen zu langsamer Aufgabenerledigung, kognitiver Belastung, Fehlern und geringerem Vertrauen in das System.",
+  "Keeping setup time for the monitoring wizard to few steps": "Die Setup-Zeit des Monitoring-Wizards auf wenige Schritte reduzieren",
+  "Showing only the most critical information at a glance on the dashboard": "Nur die wichtigsten Informationen auf dem Dashboard auf einen Blick anzeigen",
+  "Integrating an AI assistant that helps without disrupting the operator's workflow": "Einen AI-Assistenten integrieren, der hilft, ohne den Workflow des Operators zu unterbrechen",
+  "Production operator:": "Produktionsoperator:",
+  "\"I just want to set it up and go back to my machines. I shouldn't need to remember which sub-menu hides which setting.\"": "„Ich möchte es einfach einrichten und zu meinen Maschinen zurückkehren. Ich sollte mir nicht merken müssen, in welchem Untermenü welche Einstellung versteckt ist.“",
+  "I needed to understand who would use this platform, what their daily work looked like, and what would make a monitoring tool genuinely useful.": "Ich musste verstehen, wer diese Plattform nutzt, wie die tägliche Arbeit aussieht und was ein Monitoring-Tool wirklich nützlich macht.",
+  "Stakeholder interviews": "Stakeholder-Interviews",
+  "Spoke to data scientists, developers, product managers, operators and process engineers to understand business goals, technical constraints, and user needs.": "Gespräche mit Data Scientists, Entwicklern, Produktmanagern, Operatoren und Prozessingenieuren, um Geschäftsziele, technische Einschränkungen und Nutzerbedürfnisse zu verstehen.",
+  "Competitive benchmarking": "Wettbewerbs-Benchmarking",
+  "Researched how industrial software approached monitoring, identifying what worked and what was over-complicated.": "Analyse, wie industrielle Software Monitoring löst, um hilfreiche Muster und überkomplizierte Ansätze zu identifizieren.",
+  "Task analysis and mental model mapping": "Task Analysis und Mental-Model-Mapping",
+  "Documented how operators think about monitoring: what information they prioritise, what decisions they make, and in what sequence.": "Dokumentation, wie Operatoren über Monitoring denken: welche Informationen sie priorisieren, welche Entscheidungen sie treffen und in welcher Reihenfolge.",
+  "Key research questions:": "Zentrale Research-Fragen:",
+  "How do operators currently discover issues on the factory floor?": "Wie entdecken Operatoren aktuell Probleme in der Produktion?",
+  "What does a typical system configuration session look like end-to-end?": "Wie sieht eine typische Systemkonfiguration von Anfang bis Ende aus?",
+  "Where do operators feel most lost or make the most mistakes?": "Wo fühlen sich Operatoren am häufigsten verloren oder machen die meisten Fehler?",
+  "How do they get help when they're stuck?": "Wie erhalten sie Hilfe, wenn sie nicht weiterkommen?",
+  "Design principles derived from research": "Aus dem Research abgeleitete Designprinzipien",
+  "Urgency first": "Dringlichkeit zuerst",
+  "Critical alerts and KPIs must always be visible": "Kritische Alerts und KPIs müssen immer sichtbar sein",
+  "Progressive disclosure": "Progressive Offenlegung",
+  "Show only what the operator needs right now, details are one tap away": "Nur zeigen, was der Operator gerade braucht; Details sind einen Klick entfernt",
+  "Interruption tolerance": "Unterbrechungstoleranz",
+  "Every workflow must survive being abandoned and resume (Auto-save)": "Jeder Workflow muss Unterbrechungen überstehen und fortsetzbar sein (Auto-Save)",
+  "Guided by default": "Standardmäßig geführt",
+  "Configuration flows must guide operators with clear labels (no technical background)": "Konfigurationsflows müssen Operatoren mit klaren Labels führen (ohne technisches Vorwissen)",
+  "Explicit system state": "Expliziter Systemstatus",
+  "The platform must communicate clearly what it is doing, waiting for, and whether the last action succeeded or failed.": "Die Plattform muss klar kommunizieren, was sie tut, worauf sie wartet und ob die letzte Aktion erfolgreich war oder fehlgeschlagen ist.",
+  "Synthesizing insights into design direction": "Insights in Designrichtung übersetzen",
+  "After clustering research findings using FigJam affinity mapping, three core problem themes emerged. These shaped our \"How Might We\" statements.": "Nach dem Clustern der Research-Ergebnisse mit FigJam Affinity Mapping entstanden drei zentrale Problemthemen. Sie formten unsere „How Might We“-Statements.",
+  "Exploring solutions": "Lösungen explorieren",
+  "I ran three rapid concept sprints over two weeks, one per design track. Here's how ideas evolved from rough sketches to concrete solutions.": "Ich führte über zwei Wochen drei schnelle Concept Sprints durch — einen pro Design-Track. So entwickelten sich Ideen von groben Skizzen zu konkreten Lösungen.",
+  "Structuring how information should be organized was the first step. I introduced a layered disclosure model that hides details until the operator actively requests it.": "Die Strukturierung der Informationen war der erste Schritt. Ich führte ein Layered-Disclosure-Modell ein, das Details ausblendet, bis der Operator sie aktiv anfordert.",
+  "Wizard": "Wizard",
+  "I mapped the full setup process, then clustered 5 independent steps grouped by dependency. Here's the conceptual flow that won in user testing.": "Ich kartierte den gesamten Setup-Prozess und gruppierte fünf unabhängige Schritte nach Abhängigkeiten. Daraus entstand der konzeptionelle Flow, der im User Testing am besten abschnitt.",
+  "Key design decisions": "Zentrale Designentscheidungen",
+  "A guided wizard - operators are not configuration experts, so a structured linear flow with clear labels reduces cognitive load and prevents incomplete setups.": "Ein geführter Wizard — Operatoren sind keine Konfigurationsexperten; ein strukturierter linearer Flow mit klaren Labels reduziert kognitive Belastung und verhindert unvollständige Setups.",
+  "Unified severity colour system": "Einheitliches Farbsystem für Schweregrade",
+  "Red/amber/green severity coding was established as a design system primitive, a platform-wide convention, so operators build instant pattern recognition across all three components.": "Rot/Gelb/Grün-Codierung für Schweregrade wurde als Design-System-Grundlage etabliert — eine plattformweite Konvention, damit Operatoren über alle Komponenten hinweg Muster sofort erkennen.",
+  "Side panel for AI assistant": "Side Panel für den AI-Assistenten",
+  "The AI assistant uses a collapsible side panel. Modals block the live data view, but this panel compresses the dashboard but never hides it.": "Der AI-Assistent nutzt ein einklappbares Side Panel. Modals würden die Live-Daten verdecken; dieses Panel komprimiert das Dashboard, versteckt es aber nie.",
+  "I built everything in Figma, from rough lo-fi wireframes to hi-fi prototypes handed off to the development team.": "Ich baute alles in Figma — von groben Lo-Fi-Wireframes bis zu Hi-Fi-Prototypen für die Übergabe an das Entwicklungsteam.",
+  "I ran two rounds of usability testing across the project, one on lo-fi wireframes and one on the high-fidelity prototype with operators from two manufacturing facilities.": "Ich führte zwei Runden Usability Testing durch: eine mit Lo-Fi-Wireframes und eine mit dem High-Fidelity-Prototyp mit Operatoren aus zwei Fertigungsanlagen.",
+  "Finding: Operators misread “Save & Exit” as losing progress.": "Finding: Operatoren interpretierten „Save & Exit“ als möglichen Verlust des Fortschritts.",
+  "Fix: Renamed to “Save draft” with a visible auto-save status indicator in the sidebar. Confusion disappeared entirely in retesting.": "Fix: Umbenennung in „Save draft“ mit sichtbarer Auto-Save-Statusanzeige in der Sidebar. In der erneuten Testung verschwand die Verwirrung vollständig.",
+  "Finding: Tooltip-based help was never discovered.": "Finding: Tooltip-basierte Hilfe wurde nie entdeckt.",
+  "Fix: Changed all contextual help to always-visible text beneath field labels, no hover required.": "Fix: Alle kontextuellen Hilfen wurden in dauerhaft sichtbaren Text unter den Feldlabels umgewandelt — kein Hover erforderlich.",
+  "Finding: When the AI panel slid in, operators weren't certain live data was still updating.": "Finding: Wenn das AI-Panel eingeblendet wurde, waren Operatoren unsicher, ob die Live-Daten weiterhin aktualisiert werden.",
+  "Fix: Added a persistent green “LIVE” pulse indicator in the compressed dashboard header.": "Fix: Ein dauerhafter grüner „LIVE“-Pulsindikator wurde im komprimierten Dashboard-Header ergänzt.",
+  "Designing for a factory floor is fundamentally different from a desk environment. Interruption tolerance and speed of comprehension are not features, they are the product.": "Design für eine Fabrikumgebung unterscheidet sich grundlegend von einem Schreibtischkontext. Unterbrechungstoleranz und schnelle Verständlichkeit sind keine Features — sie sind das Produkt.",
+  "Understanding development constraints let me make better trade-offs. I stopped proposing interactions that would have cost weeks of build time for marginal usability gain.": "Das Verständnis technischer Einschränkungen half mir, bessere Trade-offs zu treffen. Ich schlug keine Interaktionen mehr vor, die Wochen Entwicklungszeit für nur marginale Usability-Gewinne gekostet hätten.",
+  "The three-level disclosure model was the most impactfull decision in the project.": "Das dreistufige Disclosure-Modell war die wirkungsvollste Entscheidung im Projekt.",
+  "— Sara": "— Sara",
+  "Sara Gilda Amirhajlou": "Sara Gilda Amirhajlou"
+};
+  const storageKey = "saraPortfolioLang";
+  const textNodes = [];
+  function walk(){
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode(node){
+        if(!node.nodeValue || !node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        const p = node.parentElement;
+        if(!p || ["SCRIPT","STYLE","NOSCRIPT"].includes(p.tagName)) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    let n;
+    while(n = walker.nextNode()){
+      const raw = n.nodeValue;
+      const key = raw.trim().replace(/\s+/g, " ");
+      if(de[key]) {
+        textNodes.push({node:n, key, before: raw.match(/^\s*/)[0], after: raw.match(/\s*$/)[0]});
+      }
+    }
+  }
+  function setLang(lang){
+    document.documentElement.lang = lang;
+    localStorage.setItem(storageKey, lang);
+    textNodes.forEach(item => {
+      item.node.nodeValue = item.before + (lang === "de" ? de[item.key] : item.key) + item.after;
+    });
+    document.querySelectorAll("[data-lang-btn]").forEach(btn => btn.classList.toggle("active", btn.dataset.langBtn === lang));
+    if(lang === "de" && de[document.title]) document.title = de[document.title];
+    if(lang === "en") {
+      const titleEl = document.querySelector("title");
+      if(titleEl && titleEl.dataset.enTitle) document.title = titleEl.dataset.enTitle;
+    }
+  }
+  function mountToggle(){
+    const nav = document.querySelector(".topbar, .top");
+    if(!nav || document.querySelector(".lang-switch")) return;
+    const wrap = document.createElement("div");
+    wrap.className = "lang-switch";
+    wrap.setAttribute("aria-label","Language switcher");
+    wrap.innerHTML = '<button type="button" data-lang-btn="en">EN</button><button type="button" data-lang-btn="de">DE</button>';
+    const cta = nav.querySelector(".cta, .pill");
+    if(cta) nav.insertBefore(wrap, cta); else nav.appendChild(wrap);
+    wrap.addEventListener("click", e => {
+      const btn = e.target.closest("[data-lang-btn]");
+      if(btn) setLang(btn.dataset.langBtn);
+    });
+  }
+  document.addEventListener("DOMContentLoaded", function(){
+    const titleEl = document.querySelector("title");
+    if(titleEl) titleEl.dataset.enTitle = document.title;
+    mountToggle();
+    walk();
+    setLang(localStorage.getItem(storageKey) || "en");
+  });
+})();
+</script>
+
+</body>
+</html>
