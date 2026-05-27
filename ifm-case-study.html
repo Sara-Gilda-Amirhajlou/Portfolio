@@ -126,9 +126,9 @@ html[lang="de"] .lang-en-note{display:none}
 <h2>01 - EMPATHIZE</h2><p>I needed to understand who would use this platform, what their daily work looked like, and what would make a monitoring tool genuinely useful.</p>
 <h3>Research methods</h3>
 <ul>
-<li><b>Stakeholder interviews — </b>Spoke to data scientists, developers, product managers, operators and process engineers to understand business goals, technical constraints, and user needs.</li>
-<li><b>Competitive benchmarking — </b>Researched how industrial software approached monitoring, identifying what worked and what was over-complicated.</li>
-<li><b>Task analysis and mental model mapping — </b>Documented how operators think about monitoring: what information they prioritise, what decisions they make, and in what sequence.</li>
+<li><b>Stakeholder interviews - </b>Spoke to data scientists, developers, product managers, operators and process engineers to understand business goals, technical constraints, and user needs.</li>
+<li><b>Competitive benchmarking - </b>Researched how industrial software approached monitoring, identifying what worked and what was over-complicated.</li>
+<li><b>Task analysis and mental model mapping - </b>Documented how operators think about monitoring: what information they prioritise, what decisions they make, and in what sequence.</li>
 </ul>
 <h3>Key research questions:</h3>
 <ul>
@@ -143,11 +143,11 @@ html[lang="de"] .lang-en-note{display:none}
 
 <h3>Design principles derived from research</h3>
 <ul>
-<li><b>Urgency first — </b>Critical alerts and KPIs must always be visible</li>
-<li><b>Progressive disclosure — </b>Show only what the operator needs right now, details are one tap away</li>
-<li><b>Interruption tolerance — </b>Every workflow must survive being abandoned and resume (Auto-save)</li>
-<li><b>Guided by default — </b>Configuration flows must guide operators with clear labels (no technical background)</li>
-<li><b>Explicit system state — </b>The platform must communicate clearly what it is doing, waiting for, and whether the last action succeeded or failed.</li>
+<li><b>Urgency first - </b>Critical alerts and KPIs must always be visible</li>
+<li><b>Progressive disclosure - </b>Show only what the operator needs right now, details are one tap away</li>
+<li><b>Interruption tolerance - </b>Every workflow must survive being abandoned and resume (Auto-save)</li>
+<li><b>Guided by default - </b>Configuration flows must guide operators with clear labels (no technical background)</li>
+<li><b>Explicit system state - </b>The platform must communicate clearly what it is doing, waiting for, and whether the last action succeeded or failed.</li>
 </ul>
 
 
@@ -174,9 +174,9 @@ html[lang="de"] .lang-en-note{display:none}
   
 <h3>Key design decisions</h3>
 <ul>
-<li><b>Wizard — </b>A guided wizard - operators are not configuration experts, so a structured linear flow with clear labels reduces cognitive load and prevents incomplete setups.</li>
-<li><b>Unified severity colour system — </b>Red/amber/green severity coding was established as a design system primitive, a platform-wide convention, so operators build instant pattern recognition across all three components.</li>
-<li><b>Side panel for AI assistant — </b>The AI assistant uses a collapsible side panel. Modals block the live data view, but this panel compresses the dashboard but never hides it.</li>
+<li><b>Wizard - </b>A guided wizard - operators are not configuration experts, so a structured linear flow with clear labels reduces cognitive load and prevents incomplete setups.</li>
+<li><b>Unified severity colour system - </b>Red/amber/green severity coding was established as a design system primitive, a platform-wide convention, so operators build instant pattern recognition across all three components.</li>
+<li><b>Side panel for AI assistant - </b>The AI assistant uses a collapsible side panel. Modals block the live data view, but this panel compresses the dashboard but never hides it.</li>
 </ul>
 
   
@@ -187,14 +187,14 @@ html[lang="de"] .lang-en-note{display:none}
   
 <h2 id="s6">05 - Test &amp; iterate</h2><p>I ran two rounds of usability testing across the project, one on lo-fi wireframes and one on the high-fidelity prototype with operators from two manufacturing facilities.</p>
 
-<h3>Key testing findings &amp; what changed:</h3><p><b>Finding: Operators misread “Save &amp; Exit” as losing progress.</b></p>
-<p><b>Fix: Renamed to “Save draft” with a visible auto-save status indicator in the sidebar. Confusion disappeared entirely in retesting.</b></p>
+<h3>Key testing findings &amp; what changed:</h3><p>Finding: Operators misread “Save &amp; Exit” as losing progress.</p>
+<p>Fix: Renamed to “Save draft” with a visible auto-save status indicator in the sidebar. Confusion disappeared entirely in retesting.</p>
 
-<p><b>Finding: Tooltip-based help was never discovered.</b></p>
-<p><b>Fix: Changed all contextual help to always-visible text beneath field labels, no hover required.</b></p>
+<p>Finding: Tooltip-based help was never discovered.</p>
+<p>Fix: Changed all contextual help to always-visible text beneath field labels, no hover required.</p>
 
-<p><b>Finding: When the AI panel slid in, operators weren&#x27;t certain live data was still updating.</b></p>
-<p><b>Fix: Added a persistent green “LIVE” pulse indicator in the compressed dashboard header.</b></p></section>
+<p>Finding: When the AI panel slid in, operators weren&#x27;t certain live data was still updating.</p>
+<p>Fix: Added a persistent green “LIVE” pulse indicator in the compressed dashboard header.</p></section>
  
 <section class="block reveal" id="s7"><h2>What I Learned:</h2><ul>
 <li>Designing for a factory floor is fundamentally different from a desk environment. Interruption tolerance and speed of comprehension are not features, they are the product.</li>
